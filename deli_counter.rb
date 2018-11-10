@@ -1,6 +1,9 @@
 # Write your code here.
 katz_deli = []
 def line(queue)
+  if queue.size == 0
+    return "The line is empty."
+  end
   string = "The line is currently:"
   queue.each {|name| string << " #{queue.index(name) + 1}. #{name}"}
 end
@@ -13,3 +16,5 @@ end
 def now_serving(line)
   puts "Currently serving #{line[0]}."
 end
+
+
