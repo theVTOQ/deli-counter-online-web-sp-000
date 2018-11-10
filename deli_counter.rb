@@ -1,5 +1,5 @@
 # Write your code here.
-katz_deli = []
+
 def line(queue)
   if queue.size == 0
     return "The line is empty."
