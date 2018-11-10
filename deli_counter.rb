@@ -18,6 +18,7 @@ end
 def now_serving(line)
   if line.size == 0
     puts "There is nobody waiting to be served!"
+    return
   end
   puts "Currently serving #{line[0]}."
   line.shift
