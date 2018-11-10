@@ -2,7 +2,7 @@
 
 def line(queue)
   if queue.size == 0
-    return "The line is empty."
+    return "The line is currently empty."
   end
   string = "The line is currently:"
   queue.each {|name| string << " #{queue.index(name) + 1}. #{name}"}
