@@ -7,6 +7,7 @@ def line(queue)
   end
   string = "The line is currently:"
   queue.each {|name| string << " #{queue.index(name) + 1}. #{name}"}
+  puts string
 end
 
 def take_a_number(line, name)
